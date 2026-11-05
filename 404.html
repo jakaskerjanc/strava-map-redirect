@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Moved to Activity Atlas</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://activity-atlas.jakas.si/" />
+    <script>
+      // Keep the path, query and hash (e.g. #analytics) so old deep links land on
+      // the same view. Strip this repo's prefix when served from <user>.github.io.
+      (function () {
+        var path = location.pathname.replace(/^\/strava-map-redirect(?=\/|$)/, "") || "/";
+        location.replace("https://activity-atlas.jakas.si" + path + location.search + location.hash);
+      })();
+    </script>
+    <!-- Without JavaScript: go to the home page after a moment. -->
+    <meta http-equiv="refresh" content="1; url=https://activity-atlas.jakas.si/" />
+  </head>
+  <body>
+    <p>This site has moved to <a href="https://activity-atlas.jakas.si/">activity-atlas.jakas.si</a>.</p>
+  </body>
+</html>
